@@ -3,7 +3,10 @@ RPA challenge project (rpachallenge.com) was made on VSCode with a little help f
 The project has the below folder structure. In order to run this project, you need to create virtual environment inside this project and install the requirements files. Then create .env file and add your credentials to MongoDB. To run this robot, write "python run.py 0 1 -e dev" in terminal. 
 
 ### What does this robot do?
-The purpose of the robot is to insert data to form on web page. The robot goes to RPA Challenge site: https://rpachallenge.com/. Fetches personal data from 10 persons on CSV file and inserts their information into form and pushes Submit button after every submittion.
+The purpose of the robot is to insert data to form on web page. The robot goes to RPA Challenge site: https://rpachallenge.com/. Fetches personal data from 10 persons on CSV file and inserts their information into form and pushes Submit button after every submittion. The robot has been built using the Siili Solutions robot template, where the robot's workflow is divided into different files. In Stage0 robot opens CSV-file. In Stage1 data from CSV is retrieved and placed into form on web page. 
+
+#### What to improve?
+Some time after the robot has been created it throws an error. When developing my next robot, will provide more clearer documentation inside the project. 
 
 
 ### Project structure
@@ -28,7 +31,6 @@ The project should adhere to the below folder structure. Folders should only con
     ├── stages                  # Robot workflow split into stages
     │   ├── Stage0.py
     │   └── Stage1.py
-    |   |__ Stage2.py
     ├── tasks                   # Robot Framework workflows
     │   └── main.robot
     ├── tests                   # Unit tests
